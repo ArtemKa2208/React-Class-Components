@@ -65,7 +65,7 @@ class App extends React.Component {
             )
           })}
         </div>
-        <Navigation getBeer={getBeer} />
+        <Navigation setBeer={this.setState.bind(this)} getBeer={getBeer} />
       </div>
     );
   }

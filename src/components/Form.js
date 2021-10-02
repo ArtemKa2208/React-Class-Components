@@ -12,22 +12,25 @@ class Form extends React.Component{
           <button onClick={handleClose}>x</button>
         </Modal.Header>
         <Modal.Body>
-          <label>Full name</label>
-          <input type="text" />
-          <label>Date of Birth</label>
-          <input type="text" />
-          <label>Password</label>
-          <input type="password" minlength="6"/>
-          <label>Email</label>
-          <input type="email" />
+          <form>
+            <label>Full name</label>
+            <input minlength="4" type="text" required/>
+            <label>Date of Birth</label>
+            <input type="text" required/>
+            <label>Password</label>
+            <input type="password" minlength="6" required/>
+            <label>Email</label>
+            <input type="email" required/>
+            <button className='button_form'>Registration</button>
+          </form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          {/* <Button variant="primary" onClick={handleClose}>
             Registration
-          </Button>
+          </Button> */}
         </Modal.Footer>
       </Modal>
       </>

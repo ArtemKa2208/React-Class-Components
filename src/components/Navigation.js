@@ -1,14 +1,14 @@
 import React from "react";
 class Navigation extends React.Component{
   render(){
-    const {getBeer} = this.props;
+    const {setBeer,getBeer} = this.props;
     return(
       <div className='navigation'>
-      <button onClick = {() => getBeer(1)}>1</button>
-      <button onClick = {() => getBeer(2)}>2</button>
-      <button onClick = {() => getBeer(3)}>3</button>
-      <button onClick = {() => getBeer(4)}>4</button>
-      <button onClick = {() => getBeer(5)}>5</button>
+      <button onClick = {() => getBeer(setBeer,1)}>1</button>
+      <button onClick = {() => getBeer(setBeer,2)}>2</button>
+      <button onClick = {() => getBeer(setBeer,3)}>3</button>
+      <button onClick = {() => getBeer(setBeer,4)}>4</button>
+      <button onClick = {() => getBeer(setBeer,5)}>5</button>
     </div>
     )
   }
