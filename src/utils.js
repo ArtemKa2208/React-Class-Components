@@ -1,10 +1,5 @@
 import React from "react";
 
-// class sortBy extends React.Component{
-//       funcSortBy(){
-
-//       }
-// }
 export const sortBy = ({ target: { value } },setBeer,getBeer,beer) => {
       let arrBeer = [...beer];
       switch (value) {
